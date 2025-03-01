@@ -1,6 +1,7 @@
 import { ApiProperty as DocsProperty, ApiPropertyOptional } from "@nestjs/swagger";
 import { Expose } from "class-transformer";
 import { IsBoolean, IsInt, IsOptional, IsString, IsUrl, Length } from "class-validator";
+import { Test1 } from "../index";
 import { Test1sOutputDto } from "./test1s.output";
 
 export class TeamOutputDto {
@@ -128,6 +129,7 @@ export class TeamOutputDto {
   @ApiPropertyOptional({ type: String, default: "Sunday" })
   readonly weekStart?: string = "Sunday";
 
+  // Additional fields from test1s table
   @IsOptional()
   @Expose()
   @ApiPropertyOptional({ type: () => Test1sOutputDto, isArray: true })

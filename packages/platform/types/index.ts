@@ -10,3 +10,8 @@ export * from "./event-types";
 export * from "./organizations";
 export * from "./teams";
 export * from "./embed";
+export interface Test1 {
+  id: number;
+  created_at: Date;
+  updated_at: Date;
+}
