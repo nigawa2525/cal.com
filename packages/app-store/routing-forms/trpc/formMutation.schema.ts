@@ -11,6 +11,7 @@ export const ZFormMutationInputSchema = z.object({
   disabled: z.boolean().optional(),
   fields: zodFields,
   routes: zodRoutes,
+  test_table_id: z.number().optional(), // New field for connecting to test1s table
   addFallback: z.boolean().optional(),
   duplicateFrom: z.string().nullable().optional(),
   teamId: z.number().nullish().default(null),
