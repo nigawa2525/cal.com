@@ -1,5 +1,6 @@
 import type { App_RoutingForms_Form } from "@prisma/client";
 import { Prisma } from "@prisma/client";
+import { test1s } from "@prisma/client"; // Assuming test1s is a model from Prisma client
 
 import { entityPrismaWhereClause, canEditEntity } from "@calcom/lib/entityPermissionUtils";
 import type { PrismaClient } from "@calcom/prisma";
@@ -130,6 +131,10 @@ export const formMutationHandler = async ({ ctx, input }: FormMutationHandlerOpt
       id: id,
       ...(teamId
         ? {
+            test1: {
+              connect: {
+                id: test_table_id, // Assuming test_table_id is provided in the input for connecting test1s
+              },
             team: {
               connect: {
                 id: teamId ?? undefined,

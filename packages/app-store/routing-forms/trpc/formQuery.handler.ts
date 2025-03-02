@@ -20,6 +20,10 @@ export const formQueryHandler = async ({ ctx, input }: FormsHandlerOptions) => {
       AND: [
         entityPrismaWhereClause({ userId: user.id }),
         {
+          test1s: {
+            some: {
+              id: input.test1_id, // Assuming test1_id is part of the input schema now
+            },
           id: input.id,
         },
       ],

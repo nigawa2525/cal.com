@@ -1,1 +1,28 @@
 export * from "./teams";
+export * from "./teams";
+export * from "./task";
+export * from "./teams";
+export * from "./task";
+export interface Test1 {
+  id: number;
+  created_at: Date;
+  updated_at: Date;
+}
+export * from "./teams";
+export * from "./task";
+export interface Test1 {
+  id: number;
+  created_at: Date;
+  updated_at: Date;
+}
+
+export interface OrgTestTable {
+  id: number;
+  created_at: Date;
+  updated_at: Date;
+}
+export interface OrgTestTable {
+  id: number;
+  created_at: Date;
+  updated_at: Date;
+}
