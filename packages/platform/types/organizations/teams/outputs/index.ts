@@ -4,3 +4,9 @@ export interface Test1 {
   created_at: Date;
   updated_at: Date;
 }
+
+export interface OrgTestTableOutput {
+  id: number;
+  created_at: Date;
+  updated_at: Date;
+}
