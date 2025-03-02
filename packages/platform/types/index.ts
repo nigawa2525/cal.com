@@ -10,8 +10,24 @@ export * from "./event-types";
 export * from "./organizations";
 export * from "./teams";
 export * from "./embed";
+export * from "./permissions";
+export * from "./api";
+export * from "./oauth-clients";
+export * from "./slots";
+export * from "./calendars";
+export * from "./bookings";
+export * from "./billing";
+export * from "./schedules";
+export * from "./event-types";
+export * from "./organizations";
+export * from "./teams";
+export * from "./embed";
 export interface Test1 {
   id: number;
   created_at: Date;
+  updated_at: Date;
+}
+
+export * from "./1_test_tables";
   updated_at: Date;
 }

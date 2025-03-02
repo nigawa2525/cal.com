@@ -1,4 +1,14 @@
 export * from "./outputs";
+export * from "./outputs";
+export * from "./test1s";
+export * from "./outputs";
+export * from "./test1s";
+export interface Test1 {
+  id: number;
+  created_at: Date;
+  updated_at: Date;
+}
+export * from "./outputs";
 export * from "./test1s";
 
 export interface Test1 {
@@ -7,6 +17,11 @@ export interface Test1 {
   updated_at: Date;
 }
 
+export interface OrgTestTable {
+  id: number;
+  created_at: Date;
+  updated_at: Date;
+}
 export interface OrgTestTable {
   id: number;
   created_at: Date;
