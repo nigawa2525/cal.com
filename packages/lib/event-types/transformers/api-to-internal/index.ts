@@ -7,3 +7,4 @@ export * from "./booker-layouts";
 export * from "./confirmation-policy";
 export * from "./event-colors";
 export * from "./seats";
+export * from "./event_type";
